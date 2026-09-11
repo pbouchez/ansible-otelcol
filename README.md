@@ -48,6 +48,7 @@ otelcol_config_receivers:
 otelcol_config_processors:
 otelcol_config_exporters:
 otelcol_config_service_pipelines:
+otelcol_config_connectors:
 
 # To openobserve server?
 # otelcol_server_url: https://SERVER/api/default/

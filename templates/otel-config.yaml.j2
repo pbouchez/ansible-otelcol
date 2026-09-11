@@ -108,6 +108,11 @@ exporters:
   {{ otelcol_config_exporters | to_nice_yaml(indent=2,sort_keys=False) | indent(2, False) }}
 {% endif %}
 
+connectors:
+{% if otelcol_config_connectors is defined %}
+  {{ otelcol_config_connectors | to_nice_yaml(indent=2,sort_keys=False) | indent(2, False) }}
+{% endif %}
+
 service:
   extensions: [zpages]
   pipelines:
